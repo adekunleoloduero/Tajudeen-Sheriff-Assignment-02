@@ -32,6 +32,7 @@ function countEvenNumbers(arrayOfNumbers) {
     arrayOfEvenNumbers = arrayOfNumbers.filter(num => {return num % 2 === 0});
     return arrayOfEvenNumbers.length;
 }
+assignment.countEvenNumbers = countEvenNumbers;
 
 
 /**
@@ -55,6 +56,7 @@ function celsiusToFahrenheit(arrayOfNumbers) {
     });
     return arrayOfFahrenheitValues;
 }
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 
