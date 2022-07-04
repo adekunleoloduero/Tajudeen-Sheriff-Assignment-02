@@ -28,9 +28,11 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let arrayOfEvenNumbers;
+    arrayOfEvenNumbers = arrayOfNumbers.filter(num => {return num % 2 === 0});
+    return arrayOfEvenNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
 
 /**
  * Challenge - 3
@@ -47,9 +49,13 @@ function countEvenNumbers(arrayOfNumbers) {
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+    let arrayOfFahrenheitValues;
+    arrayOfFahrenheitValues = arrayOfNumbers.map(num => {
+      return Math.trunc((num * 9 / 5) + 32);
+    });
+    return arrayOfFahrenheitValues;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+
 
 
 // ========================
